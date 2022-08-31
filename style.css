@@ -1,0 +1,30 @@
+
+.Container{
+    display: grid;
+    width: 100%;
+    height: 800px;
+    grid-gap: 5px;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"c1 c2 c2"
+                        "c1 c3 c3" 
+                        "c1 c3 c3";
+   
+  
+}
+
+
+.child1{
+    background-color: rgb(142, 142, 175);
+    grid-area: c1;
+}
+
+.child2{
+    background-color: rgb(131, 172, 172);
+    grid-area: c2;
+}
+
+.child3{
+    background-color: rgb(157, 137, 177);
+    grid-area: c3;
+}
